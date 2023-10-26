@@ -1,0 +1,10 @@
+{% extends 'list_view.html' %}
+
+{% block content %}
+<form method="post">{% csrf_token %}
+    <p>Tem certeza que quer exluir {{ object }}?</p>
+    {{ form }}
+    <input type="submit" value="Confirmar">
+</form>
+
+{% endblock %}

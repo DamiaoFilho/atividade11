@@ -1,0 +1,9 @@
+{% extends 'list_view.html' %}
+
+{% block content %}
+    <h1>Aluno: {{ object.name }}</h1>
+    <p>Nascimento: {{ object.birthday }}</p>
+    <p>Email: {{ object.email }}</p>
+    <p>Cidade: {{ object.city }}</p>
+    <p>Curso: {{ object.course }}</p>
+{% endblock %}
